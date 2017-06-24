@@ -2,7 +2,6 @@
 
 #include <thread>
 #include <atomic>
-#include <iostream>
 
 using std::thread;
 using std::atomic;

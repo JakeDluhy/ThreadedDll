@@ -2,9 +2,6 @@
 //
 #include "ThreadedDll.h"
 #include "Threader.h"
-#include <iostream>
-
-using std::cout;
 
 static Threader *threader = NULL;
 
@@ -22,11 +19,9 @@ void endSession()
 void startStreaming()
 {
 	if (threader) threader->start();
-	cout << "Dll:start";
 }
 
 void stopStreaming()
 {
 	if (threader) threader->stop();
-	cout << "Dll:stop";
 }
